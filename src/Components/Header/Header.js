@@ -30,7 +30,7 @@ function Header(props) {
           <div></div>
         </div>
 
-        <img src='/images/logo1.svg' alt='logo' />
+        <img src='./images/logo1.svg' alt='logo' />
 
         {show && <Modal hide={hideNav} />}
         <nav className={show ? 'navIn' : 'navOut'}>
@@ -38,25 +38,25 @@ function Header(props) {
           <ul>
             <li>
               <NavLink onClick={hideNav} to=''>
-                  <img src={!loc.pathname.includes('/mycollection') ? '/images/Vectorhome.png' : '/images/hover.svg'} alt='home' />
+                  <img src={!loc.pathname.includes('/mycollection') ? '/images/Vectorhome.png' : './images/hover.svg'} alt='home' />
                 <p>Home</p>
               </NavLink>
             </li>
             <li>
               <NavLink onClick={hideNav} to='mycollection'>
-                <img src={loc.pathname.includes('/mycollection') ? '/images/playlisthov.svg' : '/images/playlist.svg'} alt='collection' />
+                <img src={loc.pathname.includes('/mycollection') ? '/images/playlisthov.svg' : './images/playlist.svg'} alt='collection' />
                 <p>My collection</p>
               </NavLink>
             </li>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/radio'>
-                <img src='/images/Vectorradio.png' alt='radio' />
+                <img src='./images/Vectorradio.png' alt='radio' />
                 <p>Radio</p>
               </NavLink>
             </li>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/video'>
-                <img src='/images/videos4.svg' alt='music videos' />
+                <img src='./images/videos4.svg' alt='music videos' />
                 <p>Music videos</p>
               </NavLink>
             </li>
@@ -65,13 +65,13 @@ function Header(props) {
           <ul>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/profile'>
-                <img src='/images/profile7.svg' alt='profile' />
+                <img src='./images/profile7.svg' alt='profile' />
                 <p>Profile</p>
               </NavLink>
             </li>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/logout'>
-                <img src='/images/Logout8.svg' alt='logout' />
+                <img src='./images/Logout8.svg' alt='logout' />
                 <p>Log out</p>
               </NavLink>
             </li>
