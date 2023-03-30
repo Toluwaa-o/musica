@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
 import Home from '../Pages/Home'
 import Page from './Page'
+import { memo } from 'react'
 import Collection from '../Pages/Collection'
 import ExpandedChart from '../Components/Playlist/expandChart/ExpandedChart'
 import MyCollection from '../Components/ForCollection/MyCollection'
@@ -27,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default memo(App)
