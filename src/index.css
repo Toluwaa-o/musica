@@ -415,6 +415,7 @@ header li .active {
   align-items: center;
   color: white;
   padding: 1.5em 1em;
+  padding-bottom: 2em;
   background: #1d21234d;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
