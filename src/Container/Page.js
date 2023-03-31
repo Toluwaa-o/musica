@@ -111,6 +111,12 @@ function Page() {
       }
     }
 
+    if(!sSearch){
+      setAllSongs(prev => ({
+        ...prev, results: []
+      }))
+    }
+
     setAllSongs(prev => ({
       ...prev, results: newRes
     }))
