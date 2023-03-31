@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/musica/static/css/main.35792d49.css",
-    "main.js": "/musica/static/js/main.0d2afbb9.js",
+    "main.css": "/musica/static/css/main.511867c2.css",
+    "main.js": "/musica/static/js/main.5fc27503.js",
     "static/js/787.40df5df9.chunk.js": "/musica/static/js/787.40df5df9.chunk.js",
     "static/media/logo1.svg": "/musica/static/media/logo1.cbe3bad16a146d432cf18724f07b1296.svg",
     "static/media/playlist.svg": "/musica/static/media/playlist.8bf159556874b799c0b75a8cba7acbe7.svg",
@@ -11,12 +11,12 @@
     "static/media/profile7.svg": "/musica/static/media/profile7.41b44ac0c022670b711fc6f4d84f27a5.svg",
     "static/media/hover.svg": "/musica/static/media/hover.2f738c069a057483cd91d7d90512af5c.svg",
     "index.html": "/musica/index.html",
-    "main.35792d49.css.map": "/musica/static/css/main.35792d49.css.map",
-    "main.0d2afbb9.js.map": "/musica/static/js/main.0d2afbb9.js.map",
+    "main.511867c2.css.map": "/musica/static/css/main.511867c2.css.map",
+    "main.5fc27503.js.map": "/musica/static/js/main.5fc27503.js.map",
     "787.40df5df9.chunk.js.map": "/musica/static/js/787.40df5df9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35792d49.css",
-    "static/js/main.0d2afbb9.js"
+    "static/css/main.511867c2.css",
+    "static/js/main.5fc27503.js"
   ]
 }
