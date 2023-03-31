@@ -153,10 +153,12 @@ header {
   padding: .3em .7em;
   font-weight: 500;
   border-radius: 13px;
+  cursor: pointer;
 }
 
 .hamburger {
   display: flex;
+  cursor: pointer;
   gap: .4em;
   flex-direction: column;
 }
@@ -226,6 +228,7 @@ header li .active {
     display: flex;
     position: relative;
     align-items: center;
+    cursor: pointer;
 }
 
 .searchbar input {
@@ -234,6 +237,7 @@ header li .active {
     outline: none;
     padding: 0 .5em;
     color: white;
+    cursor: pointer;
 }
 
 .searchbar input::placeholder {
@@ -251,11 +255,13 @@ header li .active {
   max-width: 90%;
   margin: auto;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .current-playlist a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .current-playlist p:first-child {
@@ -330,6 +336,7 @@ header li .active {
   align-items: flex-start;
   height: fit-content;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .chart .right {
@@ -352,6 +359,7 @@ header li .active {
   background: #1A1E1F;
   padding: .8em;
   border-radius: 13px;
+  cursor: pointer;
 }
 
 .popular {
@@ -365,11 +373,13 @@ header li .active {
 
 .onlyTab {
   display: none;
+  cursor: pointer;
 }
 
 .chart img, .new-release img, .popular-card img {
   border-radius: 10px;
   margin-bottom: .5em;
+  cursor: pointer;
 }
 
 .new-release img, .popular-card img {
@@ -412,12 +422,14 @@ header li .active {
 
 .controls .play-btn {
   position: inherit;
+  cursor: pointer;
 }
 
 .song-details {
   display: flex;
   gap: 1em;
   align-items: center;
+  cursor: pointer;
 }
 
 .controls {
@@ -430,6 +442,7 @@ header li .active {
   border-radius: 12px;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 
 .song-details p {
@@ -469,6 +482,7 @@ header li .active {
   justify-content: space-between;
   align-items: center;
   padding-bottom: .5em;
+  cursor: pointer;
 }
 
 .expanded img {
@@ -477,6 +491,7 @@ header li .active {
   width: 300px;
   height: 300px;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .all-controls {
@@ -498,6 +513,7 @@ header li .active {
 
 .volume {
   display: none;
+  cursor: pointer;
 }
 
 .expanded-details p {
@@ -569,6 +585,7 @@ header li .active {
   margin-bottom: 3em;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .in {
@@ -676,6 +693,7 @@ header li .active {
   margin-bottom: 1em;
   width: 300px;
   height: 300px;
+  cursor: pointer;
 }
 
 .ExpandedChart p {
@@ -684,6 +702,7 @@ header li .active {
 
 .chartDetails {
   margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .chartDetails h2 {
@@ -713,6 +732,7 @@ header li .active {
   padding: .2em .4em;
   border-radius: 30px;
   gap: .3em;
+  cursor: pointer;
 }
 
 .rounded-buttons > div:first-child div {
@@ -739,6 +759,7 @@ header li .active {
   backdrop-filter: blur(5px);
   padding: .5em .7em;
   border-radius: 9px;
+  cursor: pointer;
 }
 
 .ind-like {
@@ -750,20 +771,24 @@ header li .active {
   padding: .5em .7em;
   border-radius: 9px;
   color: white;
+  cursor: pointer;
 }
 
 .song > img {
   border-radius: 5px;
   width: 35px;
+  cursor: pointer;
 }
 
 .ind-like > img {
   width: 40px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .song-middle {
   margin-right: auto;
+  cursor: pointer;
 }
 
 .song-middle p:first-child {
@@ -838,6 +863,7 @@ header li .active {
   background: #1D2123;
   opacity: .6;
   z-index: 2;
+  cursor: pointer;
   transition: transform .5s linear;
 }
 
@@ -854,10 +880,12 @@ header li .active {
   height: 210px;
   margin: auto;
   position: relative;
+  cursor: pointer;
 }
 
 .play-btn {
   position: absolute;
+  cursor: pointer;
 }
 
 .collection-details h4 {
@@ -924,6 +952,7 @@ header li .active {
 
 .Result-bar {
   display: flex;
+  cursor: pointer;
   gap: .7em;
   padding: .5em;
   color: white;
@@ -934,6 +963,7 @@ header li .active {
 .Result-bar img {
   border-radius: 5px;
   width: 50px;
+  cursor: pointer;
 }
 
 .Result-bar div {
