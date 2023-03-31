@@ -165,6 +165,8 @@ function PlayingBar() {
                 src: currSong.array[x].audio, 
                 duration: currSong.array[x].duration, 
                 array: currSong.array}))
+        }else {
+            playNext()
         }
     }
 
