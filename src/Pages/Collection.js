@@ -29,7 +29,6 @@ function Collection() {
       dispatch(collectionActions.updateLikesLoad(JSON.parse(localStorage.getItem('likes'))))
     }
 
-    console.log(JSON.parse(localStorage.getItem('collection')))
   },[])
 
   return (

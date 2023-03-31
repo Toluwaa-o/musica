@@ -140,6 +140,7 @@ header {
   text-align: center;
   width: 80%;
   margin: auto;
+  padding: 3em 1em;
 }
 
 .error p {
@@ -849,7 +850,6 @@ header li .active {
 
 .myCollection {
   margin-bottom: 15vh;
-  color: #2a2843e2;
   display: flex;
   opacity: .8;
   flex-direction: column;
@@ -882,6 +882,10 @@ header li .active {
   margin: auto;
   position: relative;
   cursor: pointer;
+}
+
+.ind-collection a {
+  color: #2a2843e2;
 }
 
 .play-btn {
