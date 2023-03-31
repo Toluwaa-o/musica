@@ -4,6 +4,15 @@ import { useSelector, useDispatch } from "react-redux"
 import { navActions } from "../../Store/navBarSlice"
 import Modal from "../UI/Modal"
 import Radium from 'radium'
+import Logo from '../../images/logo1.svg'
+import Home1 from '../../images/Vectorhome.png'
+import Home2 from '../../images/hover.svg'
+import Playlist1 from '../../images/playlisthov.svg'
+import Playlist2 from '../../images/playlist.svg'
+import Radio from '../../images/Vectorradio.png'
+import Videos from '../../images/videos4.svg'
+import Profile from '../../images/profile7.svg'
+import Logout from '../../images/Logout8.svg'
 
 function Header(props) {
   const loc = useLocation()
@@ -30,7 +39,7 @@ function Header(props) {
           <div></div>
         </div>
 
-        <img src='./images/logo1.svg' alt='logo' />
+        <img src={Logo} alt='logo' />
 
         {show && <Modal hide={hideNav} />}
         <nav className={show ? 'navIn' : 'navOut'}>
@@ -38,25 +47,25 @@ function Header(props) {
           <ul>
             <li>
               <NavLink onClick={hideNav} to=''>
-                  <img src={!loc.pathname.includes('/mycollection') ? '/images/Vectorhome.png' : './images/hover.svg'} alt='home' />
+                  <img src={!loc.pathname.includes('/mycollection') ? Home1 : Home2} alt='home' />
                 <p>Home</p>
               </NavLink>
             </li>
             <li>
               <NavLink onClick={hideNav} to='mycollection'>
-                <img src={loc.pathname.includes('/mycollection') ? '/images/playlisthov.svg' : './images/playlist.svg'} alt='collection' />
+                <img src={loc.pathname.includes('/mycollection') ? Playlist1 : Playlist2} alt='collection' />
                 <p>My collection</p>
               </NavLink>
             </li>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/radio'>
-                <img src='./images/Vectorradio.png' alt='radio' />
+                <img src={Radio} alt='radio' />
                 <p>Radio</p>
               </NavLink>
             </li>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/video'>
-                <img src='./images/videos4.svg' alt='music videos' />
+                <img src={Videos} alt='music videos' />
                 <p>Music videos</p>
               </NavLink>
             </li>
@@ -65,13 +74,13 @@ function Header(props) {
           <ul>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/profile'>
-                <img src='./images/profile7.svg' alt='profile' />
+                <img src={Profile} alt='profile' />
                 <p>Profile</p>
               </NavLink>
             </li>
             <li>
               <NavLink style={{pointerEvents: 'none'}} to='/logout'>
-                <img src='./images/Logout8.svg' alt='logout' />
+                <img src={Logout} alt='logout' />
                 <p>Log out</p>
               </NavLink>
             </li>

@@ -1264,6 +1264,7 @@ header li .active {
     justify-content: space-between;
     position: fixed;
     bottom: 0;
+    z-index: 14;
   }
 
   .controls {
@@ -1280,6 +1281,7 @@ header li .active {
     display: flex;
     align-items: center;
     gap: .5em;
+    margin-right: .5em;
   }
 
   .expanded {
