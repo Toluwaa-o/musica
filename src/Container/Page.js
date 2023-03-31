@@ -131,11 +131,18 @@ function Page() {
   )}
   }, [sSearch])
 
+  const emptyRes = () => {
+    setAllSongs(prev => ({
+      ...prev, results: [], value: ''
+    }))
+  }
+
   return (
     <>
         <Header value={allSongs.value} searcher={searcher} />
         {allSongs.results.length > 0 && <Results 
               results={allSongs.results}
+              empty={emptyRes}
               />}
         {showMessage && <Message />}
 

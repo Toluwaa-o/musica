@@ -5,12 +5,12 @@ import { navActions } from "../../Store/navBarSlice"
 export default function Res(props) {
   const dispatch = useDispatch()
 
-  const showSearch = () => {
-    dispatch(navActions.searchShow())
-  }
+  // const showSearch = () => {
+  //   dispatch(navActions.searchShow())
+  // }
 
   const clicked = () => {
-    showSearch()
+    props.empty()
     dispatch(playActions.playAudio({
       title: props.results.song.title,
       artist: props.results.song.artist,
