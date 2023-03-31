@@ -10,7 +10,7 @@ import Error from '../Pages/Error'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/musica' element={<Page />}>
+    <Route path='/musica' element={<Page />} errorElement={<Error />}>
       <Route index element={<Home />} />
       <Route path='expanded' element={<ExpandedChart />} />
       <Route path='mycollection' element={<Collection />}>
