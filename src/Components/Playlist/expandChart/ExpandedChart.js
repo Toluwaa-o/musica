@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { collectionActions } from '../../../Store/CollectionSlice'
 import Back from '../../Back to home/Back'
 import IndChart from './IndChart'
+import PlayLi from '../../../images/playlisthov.svg'
 import { uiActions } from '../../../Store/uiSlice'
 import { playActions } from '../../../Store/playSlice'
 
@@ -66,7 +67,7 @@ function ExpandedChart() {
                 </div>
 
                 <div onClick={addToCollection}>
-                <img src='/images/playlisthov.svg' alt='collection' />
+                <img src={PlayLi} alt='collection' />
                 <p>{liked ? 'Added to collection' : 'Add to collection'}</p>
                 </div>
 
