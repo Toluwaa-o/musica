@@ -7,7 +7,7 @@ const Searches = ({ artist, clickHandler }) => {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/v1/artists?artist=${artist}`)
+    fetch(`/api/v1/artists?artist=${artist}`)
       .then((res) => res.json())
       .then((rus) => {
         setArtists([...rus.artists]);

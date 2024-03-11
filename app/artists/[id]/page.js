@@ -2,13 +2,13 @@ import Details from "@/app/components/Albums/Details";
 import SongCard from "@/app/components/Songs/SongCard";
 
 export const getArtistSongs = async (id) => {
-  const res = await fetch(`http://localhost:3000//api/v1/artists/songs/${id}`);
+  const res = await fetch(`//api/v1/artists/songs/${id}`);
 
   return res.json();
 };
 
 export const getArtist = async (id) => {
-  const res = await fetch(`http://localhost:3000//api/v1/artists/${id}`);
+  const res = await fetch(`//api/v1/artists/${id}`);
 
   return res.json();
 };

@@ -1,7 +1,7 @@
 import Single from "./Single";
 
 export const getSingles = async () => {
-  const singles = await fetch("http://localhost:3000//api/v1/singles");
+  const singles = await fetch("//api/v1/singles");
 
   return singles.json();
 };

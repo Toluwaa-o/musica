@@ -1,7 +1,7 @@
 import SingleAlbum from "./Album";
 
 export const getAlbums = async () => {
-  const res = await fetch("http://localhost:3000//api/v1/albums");
+  const res = await fetch("//api/v1/albums");
 
   return res.json();
 };

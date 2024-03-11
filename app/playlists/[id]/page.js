@@ -3,13 +3,13 @@ import SongCard from "@/app/components/Songs/SongCard";
 import Back from "@/app/components/UI/Back";
 
 export const getSongs = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/v1/playlists/${id}/songs`);
+  const res = await fetch(`/api/v1/playlists/${id}/songs`);
 
   return res.json();
 };
 
 export const getPlaylist = async (id) => {
-  const res = await fetch(`http://localhost:3000//api/v1/playlists/${id}`);
+  const res = await fetch(`//api/v1/playlists/${id}`);
 
   return res.json();
 };

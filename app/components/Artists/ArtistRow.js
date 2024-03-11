@@ -1,7 +1,7 @@
 import SingleArtist from "./Artist";
 
 export const getArtists = async () => {
-  const res = await fetch("http://localhost:3000//api/v1/artists");
+  const res = await fetch("//api/v1/artists");
 
   return res.json();
 };
