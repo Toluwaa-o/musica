@@ -60,7 +60,7 @@ const Header = () => {
         <div className="h-[2px] w-[23px] bg-textWhite"></div>
       </div>
 
-      <img className="w-[2.5rem]" src="/images/Logo.svg" alt="logo" />
+      <img className="w-[2.5rem]" src="/images/logo.svg" alt="logo" />
 
       <nav className="hidden md:flex md:flex-col bg-bgDark">
         <ul className="flex flex-col gap-10 bg-bgDarker p-4 rounded-3xl">
