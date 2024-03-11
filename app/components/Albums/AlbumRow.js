@@ -1,7 +1,8 @@
+import { BASE_URL } from "@/utils/GetUrl";
 import SingleAlbum from "./Album";
 
 export const getAlbums = async () => {
-  const res = await fetch("https://musica.vercel.app//api/v1/albums");
+  const res = await fetch(`${BASE_URL}/api/v1/albums`);
 
   return res.json();
 };

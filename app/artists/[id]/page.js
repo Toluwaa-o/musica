@@ -1,14 +1,15 @@
 import Details from "@/app/components/Albums/Details";
 import SongCard from "@/app/components/Songs/SongCard";
+import { BASE_URL } from "@/utils/GetUrl";
 
 export const getArtistSongs = async (id) => {
-  const res = await fetch(`https://musica.vercel.app//api/v1/artists/songs/${id}`);
+  const res = await fetch(`${BASE_URL}/api/v1/artists/songs/${id}`);
 
   return res.json();
 };
 
 export const getArtist = async (id) => {
-  const res = await fetch(`https://musica.vercel.app//api/v1/artists/${id}`);
+  const res = await fetch(`${BASE_URL}/api/v1/artists/${id}`);
 
   return res.json();
 };

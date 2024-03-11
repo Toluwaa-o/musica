@@ -1,8 +1,11 @@
+import { BASE_URL } from "@/utils/GetUrl";
 import LikedSongs from "./LikedSongs";
 import SinglePlaylist from "./Playlist";
 
 export const getPlaylists = async () => {
-  const res = await fetch("https://musica.vercel.app//api/v1/playlists");
+  const res = await fetch(
+    `${BASE_URL}/api/v1/playlists`
+  );
 
   return res.json();
 };

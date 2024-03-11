@@ -1,8 +1,9 @@
 import Details from "@/app/components/Albums/Details";
 import SongCard from "@/app/components/Songs/SongCard";
+import { BASE_URL } from "@/utils/GetUrl";
 
 export const getSongs = async (id) => {
-  const res = await fetch(`https://musica.vercel.app//api/v1/albums/${id}/songs`);
+  const res = await fetch(`${BASE_URL}/api/v1/albums/${id}/songs`);
 
   return res.json();
 };

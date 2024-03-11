@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_URL } from "@/utils/GetUrl";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 
@@ -7,7 +8,7 @@ const Searches = ({ artist, clickHandler }) => {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
-    fetch(`https://musica.vercel.app///api/v1/artists?artist=${artist}`)
+    fetch(`${BASE_URL}/api/v1/artists?artist=${artist}`)
       .then((res) => res.json())
       .then((rus) => {
         setArtists([...rus.artists]);

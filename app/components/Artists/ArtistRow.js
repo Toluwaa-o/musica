@@ -1,7 +1,8 @@
+import { BASE_URL } from "@/utils/GetUrl";
 import SingleArtist from "./Artist";
 
 export const getArtists = async () => {
-  const res = await fetch("https://musica.vercel.app//api/v1/artists");
+  const res = await fetch(`${BASE_URL}/api/v1/artists`);
 
   return res.json();
 };
