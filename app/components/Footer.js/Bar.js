@@ -13,7 +13,7 @@ const Bar = ({
 }) => {
   const features = song.feature.map(({ name }) => name);
   return (
-    <div className="fixed w-[100vw] h-[10vh] md:h-[15vh] gap-4 items-center px-4 py-2 flex left-0 bottom-0 border border-myBorder backdrop-blur-myBlur bg-barBg md:z-[9] md:px-8">
+    <div className="fixed w-[100vw] max-w-[100%] h-[10vh] md:h-[15vh] gap-4 items-center px-4 py-2 flex left-0 bottom-0 border border-myBorder backdrop-blur-myBlur bg-barBg md:z-[9] md:px-8">
       <img
         onClick={toggleExpanded}
         src={song.cover ? song.cover : song.album.cover}
