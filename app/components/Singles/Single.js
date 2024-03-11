@@ -33,6 +33,7 @@ const Single = ({
         album,
       },
       album: songs,
+      fromLS: false,
     }));
   };
 

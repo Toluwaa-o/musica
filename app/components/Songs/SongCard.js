@@ -36,7 +36,7 @@ const SongCard = ({
             album,
             link,
           },
-          album: [...songs],
+          album: [...songs], fromLS: false
         }))
       }
     >
