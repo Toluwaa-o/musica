@@ -22,7 +22,7 @@ const SongCard = ({
   const features = feature.map(({ name }) => name);
   return (
     <span
-      className="bg-bgDark py-2 px-4 min-h-fit flex flex-row gap-4 items-center"
+      className="bg-bgDark py-2 px-4 min-h-fit flex flex-row gap-4 items-center md:hover:bg-bgDarker cursor-pointer md:transition-all"
       onClick={() =>
         setMusicState((prev) => ({
           ...prev,

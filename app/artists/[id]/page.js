@@ -29,10 +29,10 @@ const Page = async ({ params: { id } }) => {
   ]);
 
   return (
-    <main className="grid grid-rows-my_rows_2 gap-1 bg-bgDarker h-[90vh] relative pb-[10vh] md:pb-[15vh] md:h-[100vh]">
+    <main className="grid gap-1 bg-bgDarker relative pb-[10vh] md:pb-[15vh] overflow-scroll">
       <Details album={artist} />
 
-      <span className="overflow-scroll h-[100%] min-h-[30vh]">
+      <span className="h-[100%] min-h-[30vh]">
         {songs.map((song) => (
           <SongCard key={song._id} {...song} songs={songs} />
         ))}

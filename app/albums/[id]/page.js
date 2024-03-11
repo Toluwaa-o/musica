@@ -20,9 +20,9 @@ const Page = async ({ params: { id } }) => {
   const { songs, album } = await getSongs(id);
 
   return (
-    <main className="grid gap-2 bg-bgDarker py-4 h-[90vh] md:h-[100vh] relative pb-[10vh] md:pb-[15vh]">
+    <main className="grid gap-2 bg-bgDarker py-4 relative pb-[10vh] md:pb-[15vh] overflow-scroll">
       <Details album={album} isAlbum={true} />
-      <span className="overflow-scroll min-h-[100%]">
+      <span className="min-h-[100%]">
         {songs.map((song) => (
           <SongCard key={song._id} songs={songs} {...song} fromAlbum={true} />
         ))}

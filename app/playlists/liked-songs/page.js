@@ -4,7 +4,7 @@ import PlaylistSongs from "./components/PlaylistSongs";
 
 const Page = async () => {
   return (
-    <main className="grid gap-2 bg-bgDarker py-4 h-[90vh] md:h-[100vh] relative pb-[15vh] md:pb-[15vh]">
+    <main className="grid gap-2 bg-bgDarker py-4 overflow-scroll relative pb-[15vh] md:pb-[15vh]">
       <span className="md:hidden">
         <Back />
       </span>
