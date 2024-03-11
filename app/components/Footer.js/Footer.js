@@ -181,7 +181,7 @@ const Footer = () => {
             showExpanded ? "in" : "out"
           }`}
         >
-          <span className="flex justify-between items-center mb-[10vh]">
+          <span className="flex justify-between items-center mb-[7%]">
             <FaAngleDown
               size={30}
               color="#EFEEE0"
@@ -193,7 +193,7 @@ const Footer = () => {
           <img
             src={song.cover ? song.cover : song.album.cover}
             alt={song.title}
-            className="w-[320px] h-[320px] bg-textWhite mx-auto rounded-lg mb-[8vh]"
+            className="w-[320px] h-[320px] bg-textWhite mx-auto rounded-lg mb-[7%]"
           />
 
           <span className="flex justify-between items-center px-2">
