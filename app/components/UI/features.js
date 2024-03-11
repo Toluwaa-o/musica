@@ -6,7 +6,7 @@ const formatFeatures = (artist, features, small) => {
   if (small && features.join(", ").length > 6)
     return (
       <>
-        <marquee className="md:hidden" width={250} truespeed={500}>
+        <marquee className="md:hidden" width={120} truespeed={500}>
           <span className="text-textWhite text-base">{`${artist} ft ${features.join(
             ", "
           )}`}</span>
