@@ -2,7 +2,7 @@ import Details from "@/app/components/Albums/Details";
 import SongCard from "@/app/components/Songs/SongCard";
 
 export const getSongs = async (id) => {
-  const res = await fetch(`/api/v1/albums/${id}/songs`);
+  const res = await fetch(`https://musica-la8y51xuy-toluwaa-o.vercel.app/https://musica-la8y51xuy-toluwaa-o.vercel.app//api/v1/albums/${id}/songs`);
 
   return res.json();
 };

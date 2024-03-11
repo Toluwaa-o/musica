@@ -2,7 +2,7 @@ import LikedSongs from "./LikedSongs";
 import SinglePlaylist from "./Playlist";
 
 export const getPlaylists = async () => {
-  const res = await fetch("//api/v1/playlists");
+  const res = await fetch("https://musica-la8y51xuy-toluwaa-o.vercel.app/api/v1/playlists");
 
   return res.json();
 };

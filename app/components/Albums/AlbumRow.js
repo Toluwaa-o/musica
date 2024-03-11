@@ -1,7 +1,7 @@
 import SingleAlbum from "./Album";
 
 export const getAlbums = async () => {
-  const res = await fetch("//api/v1/albums");
+  const res = await fetch("https://musica-la8y51xuy-toluwaa-o.vercel.app/api/v1/albums");
 
   return res.json();
 };

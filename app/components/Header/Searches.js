@@ -7,7 +7,7 @@ const Searches = ({ artist, clickHandler }) => {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/v1/artists?artist=${artist}`)
+    fetch(`https://musica-la8y51xuy-toluwaa-o.vercel.app//api/v1/artists?artist=${artist}`)
       .then((res) => res.json())
       .then((rus) => {
         setArtists([...rus.artists]);
