@@ -1,7 +1,7 @@
 import SingleArtist from "./Artist";
 
 export const getArtists = async () => {
-  const res = await fetch("https://musica-la8y51xuy-toluwaa-o.vercel.app/api/v1/artists");
+  const res = await fetch("https://musica.vercel.app//api/v1/artists");
 
   return res.json();
 };

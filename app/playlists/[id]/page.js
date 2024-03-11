@@ -3,13 +3,13 @@ import SongCard from "@/app/components/Songs/SongCard";
 import Back from "@/app/components/UI/Back";
 
 export const getSongs = async (id) => {
-  const res = await fetch(`https://musica-la8y51xuy-toluwaa-o.vercel.app//api/v1/playlists/${id}/songs`);
+  const res = await fetch(`https://musica.vercel.app///api/v1/playlists/${id}/songs`);
 
   return res.json();
 };
 
 export const getPlaylist = async (id) => {
-  const res = await fetch(`https://musica-la8y51xuy-toluwaa-o.vercel.app/api/v1/playlists/${id}`);
+  const res = await fetch(`https://musica.vercel.app//api/v1/playlists/${id}`);
 
   return res.json();
 };

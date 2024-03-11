@@ -1,7 +1,7 @@
 import Single from "./Single";
 
 export const getSingles = async () => {
-  const singles = await fetch("https://musica-la8y51xuy-toluwaa-o.vercel.app/api/v1/singles");
+  const singles = await fetch("https://musica.vercel.app//api/v1/singles");
 
   return singles.json();
 };
