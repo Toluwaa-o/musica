@@ -177,7 +177,7 @@ const Footer = () => {
       )}
       {mySong?.link && showExpanded && (
         <div
-          className={`md:hidden overflow-hidden fixed top-0 left-0 w-[100dvw] h-[100dvh] bg-bgDark z-[10] flex flex-col py-6 px-4 gap-4 ${
+          className={`md:hidden fixed top-0 left-0 w-[100dvw] h-[100dvh] bg-bgDark z-[10] flex flex-col py-6 px-4 gap-4 ${
             showExpanded ? "in" : "out"
           }`}
         >
