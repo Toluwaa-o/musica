@@ -38,7 +38,11 @@ const Musicacontext = ({ children }) => {
   const playNext = () => {
     if (musicState.shuffle) {
       const x = Math.floor(Math.random() * musicState.album.length);
-      setMusicState((prev) => ({ ...prev, song: { ...prev.album[x] } }));
+      setMusicState((prev) => ({
+        ...prev,
+        song: { ...prev.album[x] },
+        fromLS: false,
+      }));
     } else {
       for (let i = 0; i < musicState.album.length; i++) {
         if (musicState.song._id === musicState.album[i]._id) {
@@ -46,12 +50,14 @@ const Musicacontext = ({ children }) => {
             return setMusicState((prev) => ({
               ...prev,
               song: { ...prev.album[0] },
+              fromLS: false,
             }));
           }
           let y = i + 1;
           return setMusicState((prev) => ({
             ...prev,
             song: { ...prev.album[y] },
+            fromLS: false,
           }));
         }
       }
@@ -62,7 +68,11 @@ const Musicacontext = ({ children }) => {
     if (musicState.shuffle) {
       let x = Math.floor(Math.random() * musicState.album.length);
 
-      setMusicState((prev) => ({ ...prev, song: { ...prev.album[x] } }));
+      setMusicState((prev) => ({
+        ...prev,
+        song: { ...prev.album[x] },
+        fromLS: false,
+      }));
     } else {
       for (let j = 0; j < musicState.album.length; j++) {
         if (musicState.album[j]._id === musicState.song._id) {
@@ -70,12 +80,14 @@ const Musicacontext = ({ children }) => {
             return setMusicState((prev) => ({
               ...prev,
               song: { ...prev.album[prev.album.length - 1] },
+              fromLS: false,
             }));
           }
           let x = Number(j) - 1;
           return setMusicState((prev) => ({
             ...prev,
             song: { ...prev.album[x] },
+            fromLS: false,
           }));
         }
       }

@@ -24,6 +24,7 @@ const Footer = () => {
     playNext,
     pauseSong,
     song,
+    album,
     fromLS,
   } = useContext(MusicContext);
 
@@ -37,8 +38,10 @@ const Footer = () => {
   useEffect(() => {
     setMySong(song);
 
-    if (song && song.link)
+    if (song && song.link) {
       localStorage.setItem("curr_song", JSON.stringify(song));
+      localStorage.setItem("curr_album", JSON.stringify(album));
+    }
   }, [song]);
 
   const playSong = () => {
@@ -136,9 +139,15 @@ const Footer = () => {
 
   useEffect(() => {
     const prevSong = JSON.parse(localStorage.getItem("curr_song"));
+    const prevAlbum = JSON.parse(localStorage.getItem("curr_album"));
 
     if (prevSong && prevSong.link) {
-      setMusicState((prev) => ({ ...prev, song: prevSong, fromLS: true }));
+      setMusicState((prev) => ({
+        ...prev,
+        song: prevSong,
+        album: prevAlbum,
+        fromLS: true,
+      }));
     }
   }, []);
 
