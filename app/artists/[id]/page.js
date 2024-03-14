@@ -29,7 +29,7 @@ const Page = async ({ params: { id } }) => {
   ]);
 
   return (
-    <main className="grid gap-1 bg-bgDarker relative pb-[10vh] md:pb-[15vh] overflow-scroll">
+    <main className="grid gap-1 bg-bgDarker relative pb-[10vh] md:max-h-[100vh] md:pb-[15vh] overflow-scroll">
       <Details album={artist} />
 
       <span className="h-[100%] min-h-[30vh]">

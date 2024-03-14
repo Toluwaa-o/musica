@@ -9,7 +9,7 @@ export default function Error({ error, reset }) {
   }, [error]);
 
   return (
-    <div className="grid place-content-center h-[90] w-screen gap-4 md:h-screen md:w-full">
+    <div className="grid place-content-center h-[90vh] w-screen gap-4 md:h-screen md:w-full">
       <ImSad2 size={100} color="#FACD66" className="m-auto" />
       <h2 className="text-2xl text-textWhite text-center">
         Something went wrong!
