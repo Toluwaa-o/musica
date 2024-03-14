@@ -30,7 +30,7 @@ const Page = async ({ params: { id } }) => {
   ]);
 
   return (
-    <main className="grid gap-2 bg-bgDarker py-4 md:max-h-[100vh] overflow-scroll relative pb-[15vh] md:pb-[15vh]">
+    <main className="grid gap-2 bg-bgDarker py-4 md:max-h-screen overflow-scroll relative pb-[15vh] md:pb-[15vh]">
       <span className="md:hidden">
         <Back />
       </span>

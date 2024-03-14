@@ -102,7 +102,7 @@ const Header = () => {
         </ul>
       </nav>
       {show && (
-        <nav className="nav_animation absolute top-0 left-0 py-[6rem] px-[3rem] bg-bgDark w-[100vw] h-[100vh]">
+        <nav className="nav_animation absolute top-0 left-0 py-[6rem] px-[3rem] bg-bgDark w-[100vw] h-screen">
           <IoClose
             size={40}
             color="#EFEEE0"
