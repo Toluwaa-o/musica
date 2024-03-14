@@ -55,7 +55,7 @@ const SongCard = ({
           {title.length > 20 ? (
             <>
               <marquee
-                scrollamount="2"
+                scrollamount='2'
                 width={150}
                 className="text-textWhite text-lg font-bold md:hidden"
               >

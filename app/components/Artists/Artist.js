@@ -14,7 +14,7 @@ const SingleArtist = ({ name, cover, _id }) => {
       {name.length > 14 ? (
         <marquee
           width={100}
-          scrollamount="2"
+          scrollamount='2'
           className="text-textWhite tracking-wider font-bold m-auto"
         >
           {name}

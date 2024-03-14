@@ -6,7 +6,7 @@ const formatFeatures = (artist, features, small) => {
   if (small && features.join(", ").length > 6)
     return (
       <>
-        <marquee className="md:hidden" width={120} scrollamount="2">
+        <marquee className="md:hidden" width={120} scrollamount='2'>
           <span className="text-textWhite text-base">{`${artist} ft ${features.join(
             ", "
           )}`}</span>
@@ -20,7 +20,7 @@ const formatFeatures = (artist, features, small) => {
   if (features.join(", ").length > 15)
     return (
       <>
-        <marquee className="md:hidden" width={150} scrollamount="2">
+        <marquee className="md:hidden" width={150} scrollamount='2'>
           <span>{`${artist} ft ${features.join(", ")}`}</span>
         </marquee>
         <span className="text-textWhite text-base hidden md:block">{`${artist} ft ${features.join(

@@ -22,7 +22,7 @@ const Bar = ({
       <span onClick={toggleExpanded} className="md:mr-auto">
         {song.title.length > 15 ? (
           <marquee
-            scrollamount="2"
+            scrollamount='2'
             width={80}
             className="text-textWhite md:text-[1.2rem] md:hidden"
           >
@@ -33,7 +33,7 @@ const Bar = ({
         )}
         {song.title.length > 30 ? (
           <marquee
-            scrollamount="2"
+            scrollamount='2'
             width={300}
             className="hidden md:block text-textWhite text-[1.2rem]"
           >
