@@ -12,7 +12,11 @@ const SingleArtist = ({ name, cover, _id }) => {
         className="bg-textWhite rounded-full w-[110px] flex h-[110px] md:w-[150px] md:h-[150px] m-auto"
       />
       {name.length > 14 ? (
-        <marquee width={100} truespeed={500} className="text-textWhite tracking-wider font-bold m-auto">
+        <marquee
+          width={100}
+          scrollamount="2"
+          className="text-textWhite tracking-wider font-bold m-auto"
+        >
           {name}
         </marquee>
       ) : (

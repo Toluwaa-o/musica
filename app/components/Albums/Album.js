@@ -13,7 +13,7 @@ const SingleAlbum = ({ title, cover, artist, _id }) => {
       />
       <span>
         {title.length > 15 ? (
-          <marquee truespeed={500} width={100} className="text-accentGold text-[1rem] font-bold m-auto">{title}</marquee>
+          <marquee scrollamount='2' width={100} className="text-accentGold text-[1rem] font-bold m-auto">{title}</marquee>
         ) : (
           <h3 className="text-accentGold text-[1rem] font-bold">{title}</h3>
         )}

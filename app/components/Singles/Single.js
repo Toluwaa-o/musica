@@ -91,7 +91,7 @@ const Single = ({
         {title.length > 15 ? (
           <marquee
             width={100}
-            truespeed={500}
+            scrollamount="2"
             className="text-accentGold text-[1rem] font-bold m-auto"
           >
             {title}
